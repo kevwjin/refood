@@ -8,6 +8,8 @@ import {
 } from "@react-google-maps/api";
 import firebase from "../firebase"
 import { reflect } from "async";
+import { Link } from "react-router-dom";
+
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -81,8 +83,15 @@ export default function StoreApp() {
   if(loadError) return "Error loading maps";
   if(!isLoaded) return "Loading maps";
 
+
+
   return <div>
-    <h1>Refood Store Interface</h1><br />
+    <div>
+      <img src="../refood-h-white.png" alt="Refood Logo" className = "logo" />
+      <Link to = "/">
+        <button className = 'nav-button'>Sign out</button>
+      </Link>
+    </div>
     <div class = "map">
       <h2 class = "map-header">Food Event Map</h2>
       <GoogleMap 
@@ -171,16 +180,16 @@ export default function StoreApp() {
     <div id = "table-container">
       <table>
         <thead>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Email</th>
+          <th>Event Name</th>
+          <th>Attendee Name</th>
+          <th>Attendee Email</th>
         </thead>
         <tbody>
           {signUps.map((signup) => (
             <tr>
-              <td>{signup.fname}</td>
-              <td>{signup.lname}</td>
-              <td>{signup.email}</td>
+              <td>{signup.eventName}</td>
+              <td>{signup.data.fname} {signup.data.lname}</td>
+              <td>{signup.data.email}</td>
             </tr>
           ))}
         </tbody>

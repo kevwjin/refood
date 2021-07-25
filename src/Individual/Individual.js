@@ -8,6 +8,7 @@ import {
 } from "@react-google-maps/api";
 import Dialog from "@material-ui/core/Dialog";
 import firebase from "../firebase"
+import { Link } from "react-router-dom";
 
 
 const libraries = ["places"];
@@ -83,7 +84,12 @@ export default function Individual() {
   if(!isLoaded) return "Loading maps";
 
   return <div>
-    <h1>Refood Individual Interface</h1><br />
+    <div>
+      <img src="../refood-h-white.png" alt="Refood Logo" className = "logo" />
+      <Link to = "/">
+        <button className = 'nav-button'>Sign out</button>
+      </Link>
+    </div>
     <div class = "map">
       <h2 class = "map-header">Food Event Map</h2>
       <GoogleMap 
@@ -142,7 +148,12 @@ export default function Individual() {
                         <h2>Event Sign Up</h2>
                         <br />
                         <form id = "signup-form" onSubmit = {handleSubmit((data) =>{
-                          addSignUp(data);
+                          addSignUp({data, 
+                            eventName: selectedMarker.data.name, 
+                            description: selectedMarker.data.description,
+                            startDate: selectedMarker.data.startDate,
+                            endDate: selectedMarker.data.endDate,
+                          });
                           document.getElementById("signup-form").reset();
                         })}>
                           <div class = "field">
