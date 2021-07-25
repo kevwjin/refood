@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/refood/static/css/main.29542037.chunk.css",
-    "main.js": "/refood/static/js/main.6d05a8bc.chunk.js",
-    "main.js.map": "/refood/static/js/main.6d05a8bc.chunk.js.map",
+    "main.js": "/refood/static/js/main.95d36d83.chunk.js",
+    "main.js.map": "/refood/static/js/main.95d36d83.chunk.js.map",
     "runtime-main.js": "/refood/static/js/runtime-main.9578205d.js",
     "runtime-main.js.map": "/refood/static/js/runtime-main.9578205d.js.map",
-    "static/js/2.2b7939d5.chunk.js": "/refood/static/js/2.2b7939d5.chunk.js",
-    "static/js/2.2b7939d5.chunk.js.map": "/refood/static/js/2.2b7939d5.chunk.js.map",
+    "static/js/2.a9393db3.chunk.js": "/refood/static/js/2.a9393db3.chunk.js",
+    "static/js/2.a9393db3.chunk.js.map": "/refood/static/js/2.a9393db3.chunk.js.map",
     "index.html": "/refood/index.html",
     "static/css/main.29542037.chunk.css.map": "/refood/static/css/main.29542037.chunk.css.map",
-    "static/js/2.2b7939d5.chunk.js.LICENSE.txt": "/refood/static/js/2.2b7939d5.chunk.js.LICENSE.txt"
+    "static/js/2.a9393db3.chunk.js.LICENSE.txt": "/refood/static/js/2.a9393db3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9578205d.js",
-    "static/js/2.2b7939d5.chunk.js",
+    "static/js/2.a9393db3.chunk.js",
     "static/css/main.29542037.chunk.css",
-    "static/js/main.6d05a8bc.chunk.js"
+    "static/js/main.95d36d83.chunk.js"
   ]
 }
